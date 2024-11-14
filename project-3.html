@@ -22,12 +22,12 @@
         <div class="header__logo-container">
           <div class="header__logo-img-cont">
             <img
-              src="./assets/png/john-doe.png"
+              src="./assets/png/headshot.png"
               alt="Ram Maheshwari Logo Image"
               class="header__logo-img"
             />
           </div>
-          <span class="header__logo-sub">John Doe</span>
+          <span class="header__logo-sub">Jesus Zepeda</span>
         </div>
         <div class="header__main">
           <ul class="header__links">
@@ -84,17 +84,17 @@
     </header>
     <section class="project-cs-hero">
       <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Project 3</h1>
+        <h1 class="heading-primary">Project 3 - Network Security Lab: VLANs, DHCP, and Layer 2 Security</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            in numquam incidunt earum quaerat cum fuga, atque similique natus
-            nobis sit.
+            Developed a secure network infrastructure with VLAN segmentation, allocating IPs through a DHCP 
+            server and controlling access via DHCP snooping. Added multiple security layers such as port 
+            security and storm control on switches to prevent network flooding and unauthorized device 
+            connections. Enhanced resilience with an EtherChannel setup for redundancy, ensuring consistent 
+            network performance even in failure scenarios.
           </p>
         </div>
-        <div class="project-cs-hero__cta">
-          <a href="#" class="btn btn--bg" target="_blank">Live Link</a>
-        </div>
+      
       </div>
     </section>
     <section class="project-details">
@@ -102,62 +102,94 @@
         <div class="project-details__content">
           <div class="project-details__showcase-img-cont">
             <img
-              src="./assets/jpeg/project-mockup-example.jpeg"
+              src="./assets/jpeg/smartmockups_m3gy8wtz.jpg"
               alt="Project Image"
               class="project-details__showcase-img"
             />
           </div>
           <div class="project-details__content-main">
             <div class="project-details__desc">
-              <h3 class="project-details__content-title">Project Overview</h3>
+              <p class="project-details__desc-para">Step 1: Basic Setup – Two VLANs created: Guest and Employee.</p>
               <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Neque alias tenetur minus quaerat
-                aliquid, aut provident blanditiis, deleniti aspernatur ipsam
-                eaque veniam voluptatem corporis vitae mollitia laborum corrupti
-                ullam rem?
+                Responding to the client’s request for secure, compartmentalized access, we established two VLANs: 
+                'Guest' for external users and 'Employee' for internal staff. This configuration channels guest 
+                traffic through a secure path, isolated from employee workflows, reducing the risk of unauthorized 
+                access to sensitive data. The setup not only enhances security but also organizes network traffic 
+                for efficient management, setting the stage for advanced control measures like DHCP Snooping and 
+                access policies in later stages. 
               </p>
-              <p class="project-details__desc-para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                alias tenetur minus quaerat aliquid, aut provident blanditiis,
-                deleniti aspernatur ipsam eaque veniam voluptatem corporis vitae
-                mollitia laborum corrupti ullam rem?
-              </p>
+            </div>
+            <div class="project-details__showcase-img-cont">
+              <img
+                src="./assets/jpeg/network6.png"
+                alt="Project Image"
+                class="project-details__showcase-img"
+              />
+            </div>
+            <p class="project-details__desc-para">
+              We implemented VLANs for 'Guest' and 'Employee' and set up a 
+              DHCP server to manage IP addresses dynamically. After getting the devices configured, I ran some pings 
+              to test connectivity—and hit a roadblock as the pings failed. Instead of panicking, I analyzed each 
+              configuration step, from IP addressing to VLAN assignments. By fine-tuning the DHCP settings and 
+              verifying VLAN trunking, I addressed the core issues, ensuring the network was stable and ready for 
+              future scaling. 
+            </p>
+            <div class="project-details__showcase-img-cont">
+              <img
+                src="./assets/jpeg/network3.png"
+                alt="Project Image"
+                class="project-details__showcase-img"
+              />
+            </div>
+            <p class="project-details__desc-para">
+              After establishing basic network connectivity and configuring DHCP to automate IP addressing, 
+              I implemented DHCP snooping to secure the network against rogue DHCP servers. This feature was 
+              applied across both VLANs—Guest and Employee—providing an additional layer of security by ensuring 
+              only legitimate DHCP offers were allowed. With this in place, each VLAN maintained protected and 
+              isolated DHCP traffic, reducing unauthorized access points.  
+            </p>
+            <p class="project-details__desc-para">
+              To further strengthen network security, I enabled port security on the switch, limiting the number 
+              of MAC addresses per port to prevent unauthorized device connections and mitigate the risk of MAC 
+              address spoofing. Each active port was restricted to allow only two unique MAC addresses, adding a 
+              simple but effective security mechanism.
+            </p>
+            <div class="project-details__showcase-img-cont">
+              <img
+                src="./assets/jpeg/network1.png"
+                alt="Project Image"
+                class="project-details__showcase-img"
+              />
+            </div>
+            <p class="project-details__desc-para">
+              Additionally, I implemented Link Aggregation Control Protocol (LACP) 
+              between the two core switches. By combining multiple Ethernet links into a 
+              single logical connection, LACP created redundancy, helping to eliminate 
+              single points of failure. This setup ensures that if one link fails, traffic will 
+              continue to flow uninterrupted over the other link, improving the network’s 
+              resilience and reliability. With DHCP snooping, port security, and LACP in place, 
+              the network was fortified with robust safeguards against common vulnerabilities, 
+              establishing a foundation for secure, scalable infrastructure.
+            </p>
+            <div class="project-details__showcase-img-cont">
+              <img
+                src="./assets/jpeg/network2.png"
+                alt="Project Image"
+                class="project-details__showcase-img"
+              />
             </div>
             <div class="project-details__tools-used">
               <h3 class="project-details__content-title">Tools Used</h3>
               <div class="skills">
-                <div class="skills__skill">HTML</div>
-                <div class="skills__skill">CSS</div>
-                <div class="skills__skill">JavaScript</div>
-                <div class="skills__skill">React</div>
-                <div class="skills__skill">SASS</div>
-                <div class="skills__skill">GIT</div>
-                <div class="skills__skill">Shopify</div>
-                <div class="skills__skill">Wordpress</div>
-                <div class="skills__skill">Google ADS</div>
-                <div class="skills__skill">Facebook Ads</div>
-                <div class="skills__skill">Android</div>
-                <div class="skills__skill">IOS</div>
+                <div class="skills__skill">VLAN Configuration and Management</div>
+                <div class="skills__skill">DHCP Server Setup and Optimization</div>
+                <div class="skills__skill">DHCP Snooping for Enhanced Security</div>
+                <div class="skills__skill">MAC Address Sticky Configuration</div>
+                <div class="skills__skill">Link Aggregation Control Protocol (LACP) Implementation</div>
+                <div class="skills__skill">EtherChannel Configuration</div>
+                <div class="skills__skill">Network Troubleshooting and Diagnostics</div>
+                <div class="skills__skill">Packet Tracer Simulation and Analysis</div>
               </div>
-            </div>
-            <div class="project-details__links">
-              <h3 class="project-details__content-title">See Live</h3>
-              <a
-                href="#"
-                class="btn btn--med btn--theme project-details__links-btn"
-                target="_blank"
-                >Live Link</a
-              >
-              <a
-                href="#"
-                class="btn btn--med btn--theme-inv project-details__links-btn"
-                target="_blank"
-                >Code Link</a
-              >
             </div>
           </div>
         </div>
@@ -171,58 +203,28 @@
               <span>Social</span>
             </h2>
             <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="#">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/jesus-zepeda-a51029317/">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/linkedin-ico.png"
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
+              <a target="_blank" rel="noreferrer" href="https://github.com/ernbernie">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/github-ico.png"
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/twitter-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/yt-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/png/insta-ico.png"
-                  alt="icon"
-                />
-              </a>
             </div>
           </div>
           <div class="main-footer__row main-footer__row-2">
-            <h4 class="heading heading-sm text-lt">John Doe</h4>
+            <h4 class="heading heading-sm text-lt">Jesus Zepeda</h4>
             <p class="main-footer__short-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
-              tempora explicabo quae quod deserunt
+              If you've read this far, please connect with me on LinkedIn!
             </p>
           </div>
-        </div>
-
-        <div class="main-footer__lower">
-          &copy; Copyright 2021. Made by
-          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
-            >Ram Maheshwari</a
-          >
-        </div>
       </div>
     </footer>
     <script src="./index.js"></script>
